@@ -1,0 +1,2 @@
+include ':app', ':openCVLibrary343-debug', ':handwritingrecognition-debug'
+rootProject.name='TestingLib'
