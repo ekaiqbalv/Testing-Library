@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
             R.id.nav_predict -> {
                 val bitmapDrawable = viewImage.drawable as BitmapDrawable
                 val bitmap = bitmapDrawable.bitmap
-                var result = ""
-                result = HandwritingRecognition.recognition(this, bitmap)
+                var result = "Hasil "
+                result += HandwritingRecognition.recognition(this, bitmap)
                 Toast.makeText(this, result, Toast.LENGTH_LONG).show()
             }
         }
